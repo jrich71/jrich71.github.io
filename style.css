@@ -81,7 +81,7 @@ a:hover {
 
 /* Navigation Bar - Simple & Clean */
 .navbar {
-    width: 35%; /* Match the left column width */
+    width: 20%; /* Match the left column width */
     margin: 0 auto 20px auto; /* Centers the navbar horizontally */
     font-size: 18px;
     text-align: center; /* Centers the links inside the navbar */
