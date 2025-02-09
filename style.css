@@ -64,6 +64,24 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Navigation Bar - Simple & Clean */
+.navbar {
+    text-align: left; /* Aligns navigation to the left */
+    font-size: 18px;
+    margin-bottom: 20px; /* Adds space below the navbar */
+}
+
+/* Navigation Links */
+.navbar a {
+    text-decoration: none; /* Removes underline by default */
+    color: black;
+    margin-right: 15px; /* Adds spacing between links */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underlines links on hover */
+}
+
 /* Responsive layout for small screens */
 @media (max-width: 768px) {
     .container {
