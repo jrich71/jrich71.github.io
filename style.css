@@ -24,6 +24,16 @@ body {
     margin-left: -20px;
 }
 
+.left-column a {
+    color: black; /* Change link color to black */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make it stand out */
+}
+
+.left-column a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 /* Profile image styling */
 .profile-img {
     width: 100%;
