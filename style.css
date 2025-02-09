@@ -1,13 +1,81 @@
+/* General page styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
-    text-align: center;
-    padding: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
+
+/* Container for two-column layout */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Left column (photo & contact) */
+.left-column {
+    width: 35%;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile image styling */
+.profile-img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+/* Contact information */
+.contact-info {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Right column (bio & content) */
+.right-column {
+    width: 65%;
+    padding: 30px;
+    text-align: left;
+}
+
+/* Headings and text */
 h1 {
     color: #333;
+    margin-bottom: 10px;
 }
-a {
-    color: #007bff;
-    text-decoration: none;
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .left-column, .right-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-column {
+        padding: 20px;
+    }
 }
