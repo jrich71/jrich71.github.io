@@ -2,31 +2,24 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
-    margin: 0;
+    color: black;
+    margin: 40px;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
-/* Container for two-column layout */
+/* Two-column layout */
 .container {
     display: flex;
-    width: 80%;
+    flex-direction: row;
+    gap: 40px; /* Adds space between columns */
     max-width: 900px;
-    margin-top: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
+    margin: auto;
 }
 
-/* Left column (photo & contact) */
+/* Left column (photo & contact info) */
 .left-column {
     width: 35%;
-    background-color: #007bff; /* Blue background */
-    color: white;
-    padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 /* Profile image styling */
@@ -35,7 +28,6 @@ body {
     max-width: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
-    border: 3px solid white;
 }
 
 /* Contact information */
@@ -47,35 +39,39 @@ body {
 /* Right column (bio & content) */
 .right-column {
     width: 65%;
-    padding: 30px;
     text-align: left;
 }
 
 /* Headings and text */
-h1 {
-    color: #333;
+h1, h2 {
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 p {
     font-size: 16px;
-    color: #555;
     line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-/* Responsive design for small screens */
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout for small screens */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        width: 90%;
     }
-    
+
     .left-column, .right-column {
         width: 100%;
         text-align: center;
-    }
-
-    .right-column {
-        padding: 20px;
     }
 }
