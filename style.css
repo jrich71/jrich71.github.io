@@ -20,14 +20,19 @@ body {
 .left-column {
     width: 35%;
     text-align: left;
+    padding-left: 0px;
+    margin-left: -20px;
 }
 
 /* Profile image styling */
 .profile-img {
     width: 100%;
     max-width: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+    border-radius: 50%; /* Testing this addition */
+    margin-bottom: 15px; /* Testing this addition */
+    display: flex; /* Testing this addition */
+    flex-direction: column; /* Testing this addition */
+    align-items: flex-start; /* Ensures image and text align to the left */
 }
 
 /* Contact information */
